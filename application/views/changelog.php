@@ -68,6 +68,7 @@
 
         <a id="home_button" class="btn btn-default btn-osrs" href="/">Back to homepage</a>
         <span class="links">Thanks to the <a href="http://2007.runescape.wikia.com/wiki/2007scape_Wiki">OSRS wikia</a> for the clue scroll data</span>
+        <span class="links">Contribute to this project on <a href="https://github.com/JoeGandy/RSClues">Github</a></span>
         <img class="widescroll-bottom" src="/assets/img/backdrop_765_top.gif">
     </div>
 </div>

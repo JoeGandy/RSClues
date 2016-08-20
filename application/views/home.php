@@ -31,19 +31,8 @@
         </div>
         <span class="links"><a href="/about">What is this?</a> <a href="http://www.reddit.com/r/2007scape/comments/37a8mg/clue_solver_i_made_in_my_free_time_let_me_know/">Main Reddit Post</a></span>
         <span class="links">Thanks to the <a href="http://2007.runescape.wikia.com/wiki/2007scape_Wiki">OSRS wikia</a> for the clue scroll data</span>
+        <span class="links">Contribute to this project on <a href="https://github.com/JoeGandy/RSClues">Github</a></span>
         <img class="widescroll-bottom" src="/assets/img/backdrop_765_top.gif">
-    </div>
-    <div class="col-xs-12 col-md-8 col-md-offset-2" style="margin-top:50px;height:120px;">
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- RsClues -->
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-1964151501225828"
-             data-ad-slot="2458204598"
-             data-ad-format="auto"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
     </div>
 </div>
 <?php $this->load->view('includes/footer');?>
