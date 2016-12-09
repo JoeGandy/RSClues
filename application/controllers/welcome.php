@@ -25,7 +25,6 @@ class Welcome extends CI_Controller {
 
 	public function get_page($page)
 	{
-		return;
 		$old=false;
 		$url;
 
@@ -50,12 +49,11 @@ class Welcome extends CI_Controller {
 
 	public function update()
 	{
-		return;
 		ini_set('display_errors', 1);
 		ini_set('display_startup_errors', 1);
 		error_reporting(E_ALL);
 
-		$debug=false;
+		$debug=true;
 		$show_emote_clue_output=false;
 		$show_anagram_clue_output=false;
 		$show_challenge_scrolls_output=false;
@@ -261,7 +259,7 @@ class Welcome extends CI_Controller {
 						break;
 						case 3:
 							if($item->plaintext == " ") continue;
-							$clue['challenge_answer'] = $item->plaintext;
+							$clue['clue_answer'] .= "<br><br>Challenge Answer: ".$item->plaintext;
 						break;
 						case 4:
 							if($item->plaintext == " ") continue;
@@ -503,6 +501,13 @@ class Welcome extends CI_Controller {
 			}
 
 		}
+
+
+		$total = 0;
+		for($clue_type=1;$clue_type<7;$clue_type++){
+			$total += count($clues[$clue_type]);
+		}
+			echo '<br>'.$total;
 	}
 
 	private function pre($array){
