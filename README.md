@@ -22,3 +22,8 @@ Yep, of course, there is an .sql file in the root of this project, which should 
 ## Can I just use your code for my own project?
 
 Absolutely! If you think any of the data scraped by me, or any of the code in this project may help you develop your own site, I'd encourage it and I'd love to see what you make.
+
+## Planned Features
+
+1. Re-add solutions to challanges (sorry)
+2. Add more info to clues in terms of requirements
