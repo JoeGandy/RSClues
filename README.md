@@ -13,11 +13,7 @@ I don't take any money/adrevenue from this site so there is nothing for me to ga
 
 ## How was this site built?
 
-This site is built upon a base framework of Codeigniter (Which is an MVC based php framework), it's a useful framework to learn if you haven't already and is a very solid introduction to the MVC concept in web development. Even if you just know raw php, you can usually figure our the jist of the functionality with a bit of googling.
-
-## Can I have the database too?
-
-Yep, of course, there is an .sql file in the root of this project, which should create the correct database and tables as well as populate them the set of releveant data (Although you made need to run an update from /welcome/update to update your clues.
+This site is now built in raw php, it uses no databases so it should be fast and very easy for you to replicate on a simple webserver such as wamp.
 
 ## Can I just use your code for my own project?
 
@@ -25,5 +21,4 @@ Absolutely! If you think any of the data scraped by me, or any of the code in th
 
 ## Planned Features
 
-1. Re-add solutions to challanges (sorry)
-2. Add more info to clues in terms of requirements
+1. Add more info to clues in terms of requirements
