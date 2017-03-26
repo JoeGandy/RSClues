@@ -1,36 +1,20 @@
-$(function() { 
-    jQuery.ui.autocomplete.prototype._resizeMenu = function () {
-        var ul = this.menu.element;
-        ul.outerWidth(this.element.outerWidth());
-    }
-
-    $( "#autocomplete" ).autocomplete({
-        source: function( request, response ) {
-            $.ajax({
-              url: "/welcome/get_clues",
-              dataType: "json",
-              data: {
-                q: request.term
-              },
-              success: function( data ) {
-                console.log(data);
-                response( data );
-              }
-            });
-        },
-        minLength: 1,
-        //select
-        select: function(e, ui) {
-            window.location.href = "/clue?id="+ui.item.id;
-        }
-    });
-  });
-
-
+var clues_json=jsonstr;
 $(document).ready(function(){
-    $("img").each(function( index ) {
-        $(this).attr('src', $(this).data('src'));
-        $(this).parent().attr("href", "");
-    });
-});
+	var $input = $("#autocomplete").typeahead({
+	  source: clues_json,
+	  autoSelect: true,
+ 		displayText: function(item){ return item.clue_text;}
+	});
 
+	$input.change(function() {
+
+	  var current = $input.typeahead("getActive");
+	  if (current) {
+	    if (current.clue_text == $input.val()) {
+	    	var clueIndex = clues_json.map(function(x) {return x.clue_text; }).indexOf(current.clue_text);
+	    	window.location.href = '/clue/?id=' + clueIndex;
+	    }
+	  }
+	});
+		
+});

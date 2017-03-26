@@ -66,11 +66,11 @@ img.widescroll-bottom {
 	padding:50px;
 	padding-bottom:10px;
 	text-align:center;
-  	position: relative;
-  	background-image: url(/assets/img/backdrop_745.gif);
+  position: relative;
+  background-image: url(/assets/img/backdrop_745.gif);
  	background-position: top center;
-  	background-repeat: repeat-y;
-  	background-size: contain; 
+  background-repeat: repeat-y;
+  background-size: contain; 
 }
 
 .btn-osrs{
@@ -85,6 +85,15 @@ img.widescroll-bottom {
 
 .navbar-nav{
   width:calc(100% - 100px);
+}
+
+.ui-menu .ui-menu-item{
+  border-bottom:1px solid #CCC;
+}
+.typeahead.dropdown-menu>li>a{
+  white-space: normal;
+  font-size: 0.9em;
+  border-bottom: 1px solid #b5b5b5;
 }
 @media (max-width: 400px){
   img.widescroll-top, img.widescroll-bottom {
