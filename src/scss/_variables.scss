@@ -1,0 +1,41 @@
+$avatar-width: 200px;
+$main-font-family: 'Rubik', sans-serif;
+$content-padding: 1em;
+
+$main-icon-colour: #2200ff;
+$main-icon-highlight-colour: #ff0022;
+
+
+$animation-quick: 0.3s;
+$animation-normal: 0.5s;
+$animation-slow: 0.8s;
+
+
+%content-padding-vert {
+  padding: $content-padding 0;
+}
+
+%content-padding-hori {
+  padding: 0 $content-padding;
+}
+
+%box-shadow {
+  -webkit-box-shadow: 0 0 20px #888;
+  -moz-box-shadow: 0 0 20px #888;
+  box-shadow: 0 0 20px #888;
+
+  filter: drop-shadow(0 0 20px #888);
+}
+
+%main-theme-icons {
+  color: $main-icon-colour;
+  transition: color $animation-quick ease-in-out,
+              transform $animation-quick ease-in-out;
+
+  font-size:1.2em;
+
+  &:hover {
+    color: $main-icon-highlight-colour;
+    transform: scale(1.2);
+  }
+}

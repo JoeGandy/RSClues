@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://rsclues.com/sitemap.xml
+Host: https://rsclues.com

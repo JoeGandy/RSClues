@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "name": "rsclues",
+  "description": null,
+  "icons": {
+    "60": "/icons-75b82cdcd54e783b432033f61405ca3d/firefox_app_60x60.png",
+    "128": "/icons-75b82cdcd54e783b432033f61405ca3d/firefox_app_128x128.png",
+    "512": "/icons-75b82cdcd54e783b432033f61405ca3d/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": null,
+    "url": null
+  }
+}

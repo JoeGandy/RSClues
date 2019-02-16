@@ -1,0 +1,211 @@
+body {
+  font-size: 13px;
+  background: black url(../img/bg2.jpg) repeat-y top center;
+  text-align: center;
+  margin: 0;
+  overflow-y: scroll;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+._main_content_wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+
+  ._header {
+    width: 100%;
+    display: flex;
+    justify-self: flex-start;
+
+    height: 50px;
+    align-items: center;
+
+    background: #f9f9f9; /* Old browsers */
+    background: -moz-linear-gradient(top, #f9f9f9 0%, #f6f6f6 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f9f9f9 0%, #f6f6f6 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f9f9f9 0%, #f6f6f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#f6f6f6', GradientType=0);
+
+    & > * {
+      display: flex;
+      color: #666;
+    }
+
+    ._logo {
+      font-size: 1.35em;
+      padding: 0 30px;
+    }
+
+    a {
+      padding: 0 20px;
+      text-decoration: none;
+      height: 100%;
+      vertical-align: center;
+      line-height: 50px;
+
+      &.active {
+        background-color: #DDD;
+      }
+    }
+  }
+
+  ._main_window {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 100px;
+    background-image: url(../img/backdrop_745.gif);
+    background-position: top center;
+    background-repeat: repeat-y;
+    background-size: 95%;
+
+    &:after,
+    &:before {
+      content: " ";
+      width: 100%;
+      background-image: url(../img/backdrop_765_top.gif);
+      background-size: 100% 100%;
+      display: flex;
+      height: 50px;
+      position: absolute;
+    }
+
+    &:before {
+      top: -25px;
+    }
+
+    &:after {
+      bottom: -25px;
+    }
+
+    ._main_window_content {
+      color: #111;
+      width: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 80px 50px 50px;
+
+      h1 {
+        font-size: 1.8em;
+        color: #222;
+      }
+
+      & > h3 {
+        font-size: 1.6em;
+        padding: 20px 0 10px;
+      }
+
+      & > p {
+        margin-bottom: 30px;
+        padding: 5px;
+      }
+
+      div, p {
+        line-height: 1.4em;
+        color: #222;
+      }
+
+      a {
+        color: #7B4F17;
+        text-decoration: none;
+      }
+
+      ._clue_search {
+        padding: 50px 0 0;
+        flex-direction: column;
+        width: 90%;
+
+        h1 {
+          padding-bottom: 30px;
+        }
+
+        input {
+          width: 100%;
+          padding: 5px;
+          font-size: 1.2em;
+        }
+      }
+
+      ._clue_result {
+        margin-bottom: 50px;
+
+        h2 {
+          font-size: 1.5em;
+          padding: 10px;
+          color: #7B4F17;
+        }
+
+        img {
+          max-width: 400px !important;
+        }
+      }
+
+      ._latest_news {
+        display: flex;
+        flex-direction: column;
+        color: #3c763d;
+        background-color: #dff0d8;
+        border-color: #d6e9c6;
+        width: 60%;
+        border-radius: 5px;
+        padding: 20px 20px 30px;
+        margin: 20px 0 50px;
+
+        h6 {
+          font-weight: bold;
+          font-size: 1.1em;
+          padding: 5px;
+
+          &:after {
+            content: "\2713";
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+
+    ._footer {
+      padding: 5px;
+      line-height: 1.4em;
+      color: #222;
+
+      a {
+        padding: 0 5px;
+      }
+    }
+  }
+}
+
+.rbt-sr-status {
+  display: none;
+}
+
+.dropdown-menu.show {
+  //Sadly needed to overwrite default styles
+  width: calc(100% + 13px) !important;
+  display: flex !important;
+  position: relative !important;
+  top: 0 !important;
+  margin-top: -32px;
+
+
+  //Normal styles from this point
+  background-color: white;
+  flex-direction: column;
+  align-self: center;
+
+  & > li {
+    border-bottom: 1px solid #7B4F17;
+    padding: 5px;
+
+    &:hover {
+      background-color: #7B4F17;
+
+      & > a > div {
+        color: white;
+      }
+    }
+  }
+}
