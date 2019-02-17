@@ -6,7 +6,7 @@ The original idea was to build a clue solver back when clients didnt have this b
 Clone the repo, ensure you gatsby client setup (`npm install -g gatsby`)  
 Run `npm i` in the project root  
 Run `npm run develop` the site will then be hosted locally at localhost:8000
-Run `npm run build` to set up a production build, ideally this wouldn't bein the repo but im commiting it so i can have dumb servers that don't need to build the project and can just git pull
+Run `npm run build` to set up a production build, ideally this wouldn't be in the repo but im commiting it so i can have dumb servers that don't need to build the project and can just git pull
 
 ## About
 Built on gatsby and react  
