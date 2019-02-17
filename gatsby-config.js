@@ -39,7 +39,7 @@ module.exports = {
 			resolve: `gatsby-plugin-manifest`,
 				options: {
 					name: "RSClues - Clue Solver",
-					short_name: "rsclues",
+					short_name: "RSClues",
 					start_url: "/",
 					background_color: "#1d1b15",
 					theme_color: "#dcbf8c",
