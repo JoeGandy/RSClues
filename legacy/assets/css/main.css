@@ -1,0 +1,131 @@
+* {
+	margin:0;
+	padding:0;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+	background: black;
+  	font-size: 13px;
+  	background-image: url(/assets/img/bg2.jpg);
+ 	background-position: top center;
+  	background-repeat: repeat-y;
+  	text-align: center;
+  	margin: 0;
+  	overflow-y: scroll;
+}
+
+#home_button{
+	width:150px;
+	margin:5px auto;
+}
+
+.links:first-of-type{
+	margin-top:40px;
+}
+.links{
+	display:block;
+	font-size:13px;
+  width:100%;
+}
+
+.links a, .osrs_link, .osrs_link:hover{
+	padding:5px;
+	color:#7B4F17;
+	text-align:center;
+}
+
+img.widescroll-top {
+  position: relative;
+  top: -70px;
+  padding: 0;
+  margin: 0;
+  z-index: 100;
+  display: block;
+  width:120%;
+  left:-10%;
+}
+
+img.widescroll-bottom {
+  position: relative;
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  z-index: 100;
+  display: block;
+  width:120%;
+  left:-10%;
+}
+
+.component_contianer{
+	height:1000px;
+}
+
+.search_container{
+	margin-top:150px;
+	padding:50px;
+	padding-bottom:10px;
+	text-align:center;
+  position: relative;
+  background-image: url(/assets/img/backdrop_745.gif);
+ 	background-position: top center;
+  background-repeat: repeat-y;
+  background-size: contain; 
+}
+
+.btn-osrs{
+	background-color:#7B4F17;
+	color:white;
+}
+
+.btn-osrs:hover{
+	background-color:#4C300D;
+	color:white;
+}
+
+.navbar-nav{
+  width:calc(100% - 100px);
+}
+
+.ui-menu .ui-menu-item{
+  border-bottom:1px solid #CCC;
+}
+.typeahead.dropdown-menu>li>a{
+  white-space: normal;
+  font-size: 0.9em;
+  border-bottom: 1px solid #b5b5b5;
+}
+@media (max-width: 400px){
+  img.widescroll-top, img.widescroll-bottom {
+      display:none;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 450px){
+  img.widescroll-top, img.widescroll-bottom {
+      width:160%;
+      left:-30%;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 562px){
+	img.widescroll-top, img.widescroll-bottom {
+  		width:140%;
+  		left:-20%;
+	}
+}
+
+@media (min-width: 563px) and (max-width: 768px) { /* xs */
+	img.widescroll-top, img.widescroll-bottom {
+  		width:130%;
+  		left:-14%;
+	}
+}
+@media (min-width: 769px) and (max-width: 992px ) { /* sm */
+}
+@media (min-width: 993px) and (max-width: 1200px) { /* md */
+	img.widescroll-top, img.widescroll-bottom {
+  		width:125%;
+  		left:-12%;
+	}
+}
