@@ -18,6 +18,7 @@ export default ({children}) => (
             <div className="_main_window_content">
                 {children}
                 <Footer/>
+                <div style={{clear: 'both'}} />
             </div>
         </div>
     </div>

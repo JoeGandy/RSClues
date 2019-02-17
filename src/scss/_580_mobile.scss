@@ -1,0 +1,28 @@
+body{
+  background-size:100%;
+}
+
+._main_content_wrapper{
+
+  ._header{
+    a {
+      font-size:1.5em;
+      span {
+        display:none;
+      }
+    }
+  }
+
+  ._main_window{
+    margin: 50px 10px 0 10px;
+
+    ._main_window_content{
+      width: calc(100% - 50px) !important;
+      padding: 80px 25px 25px;
+    }
+
+    ._clue_result img{
+      max-width:80% !important;
+    }
+  }
+}

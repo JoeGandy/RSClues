@@ -34,17 +34,35 @@ body {
     ._logo {
       font-size: 1.35em;
       padding: 0 30px;
+
+      a{
+        color: #666;
+        text-decoration: none;
+      }
     }
 
-    a {
-      padding: 0 20px;
-      text-decoration: none;
-      height: 100%;
-      vertical-align: center;
-      line-height: 50px;
+    ._links {
+      a {
+        padding: 0 20px;
+        text-decoration: none;
+        height: 100%;
+        vertical-align: center;
+        line-height: 50px;
+        color: #666;
 
-      &.active {
-        background-color: #DDD;
+        &.active {
+          background-color: #DDD;
+        }
+
+        svg {
+          display: inline;
+          line-height: 50px;
+          height: 100%;
+        }
+
+        span {
+          padding-left: 10px;
+        }
       }
     }
   }
@@ -54,6 +72,7 @@ body {
     display: flex;
     flex-direction: column;
     align-self: center;
+    flex-shrink: revert;
     margin-top: 100px;
     background-image: url(../img/backdrop_745.gif);
     background-position: top center;
@@ -138,7 +157,7 @@ body {
         }
 
         img {
-          max-width: 400px !important;
+          max-width: 400px;
         }
       }
 
@@ -167,9 +186,9 @@ body {
     }
 
     ._footer {
-      padding: 5px;
       line-height: 1.4em;
       color: #222;
+      padding: 5px 5px 50px;
 
       a {
         padding: 0 5px;
@@ -184,7 +203,6 @@ body {
 
 .dropdown-menu.show {
   //Sadly needed to overwrite default styles
-  width: calc(100% + 13px) !important;
   display: flex !important;
   position: relative !important;
   top: 0 !important;

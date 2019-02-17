@@ -1,0 +1,15 @@
+body{
+  background-size:100%;
+}
+
+._main_content_wrapper{
+  ._main_window{
+    margin: 100px 50px 0 50px;
+    ._main_window_content{
+      width:80% !important;
+    }
+    ._clue_result img{
+      max-width:80% !important;
+    }
+  }
+}

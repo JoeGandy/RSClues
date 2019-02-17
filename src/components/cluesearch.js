@@ -22,7 +22,7 @@ export default class ClueSearch extends React.Component {
                     name="clue_search"
                     labelKey="clue_text"
                     options={clues}
-                    placeholder=""
+                    autoFocus
                     minLength={3}
                     renderMenuItemChildren={(option) => (
                         <div>
@@ -30,6 +30,8 @@ export default class ClueSearch extends React.Component {
                         </div>
                     )}
                     onChange={ClueSearch.onClueSelect}
+                    clearButton={true}
+
                 />
             </label>
         </div>
