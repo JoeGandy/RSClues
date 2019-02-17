@@ -1,24 +1,14 @@
 # RSClues
-A website based clue solver for old school runescape, see it live at http://www.rsclues.com
+A website based clue solver for old school runescape, see it live at http://www.rsclues.com  
+The original idea was to build a clue solver back when clients didnt have this built in, but now its less useful, but I maintain it and update it occasional as a personal pet project
 
-## Why is this on git now?
+## Contributing to the project
+Clone the repo, ensure you gatsby client setup (`npm install -g gatsby`)  
+Run `npm i` in the project root  
+Run `npm run develop` the site will then be hosted locally at localhost:8000
+Run `npm run build` to set up a production build, ideally this wouldn't bein the repo but im commiting it so i can have dumb servers that don't need to build the project and can just git pull
 
-Due to time constraints, I'm struggling to find time to develop this project into what I wanted it to be, so If I'm to open it up to the public hopefully they can help contribute to the website! Even if no one contributes, atleast I have bug tracking and I can share with my code with anyone who wants to develop stuff for old school runescape.
-
-## Why would I help you?
-
-Perhaps you've just started development and want a real world project to practice on? Perhaps you like using rsclues.com but get sick of the time it takes me to udpate it everytime there is a slight update to clues.
-
-I don't take any money/adrevenue from this site so there is nothing for me to gain on this.
-
-## How was this site built?
-
-This site is now built in raw php, it uses no databases so it should be fast and very easy for you to replicate on a simple webserver such as wamp.
-
-## Can I just use your code for my own project?
-
-Absolutely! If you think any of the data scraped by me, or any of the code in this project may help you develop your own site, I'd encourage it and I'd love to see what you make.
-
-## Planned Features
-
-1. Add more info to clues in terms of requirements
+## About
+Built on gatsby and react  
+Data scarped from osrs wikia with permissions  
+You can see the old php import in the /legacy folder, which contains the old build of the site in php

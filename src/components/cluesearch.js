@@ -17,7 +17,7 @@ export default class ClueSearch extends React.Component {
 
     render() {
         return <div className="_clue_search">
-            <label for="clue_search"><h1>{this.props.title}</h1>
+            <label htmlFor="clue_search"><h1>{this.props.title}</h1>
                 <Typeahead
                     name="clue_search"
                     labelKey="clue_text"

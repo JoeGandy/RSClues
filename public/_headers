@@ -9,17 +9,17 @@
 /sw.js
   Cache-Control: no-cache
 /offline-plugin-app-shell-fallback/
-  Link: </webpack-runtime-aa17700360f025285a34.js>; rel=preload; as=script
-  Link: </component---node-modules-gatsby-plugin-offline-app-shell-js-c16bbbd7af82a69f0327.js>; rel=preload; as=script
+  Link: </webpack-runtime-6a679237abbb479ce36a.js>; rel=preload; as=script
+  Link: </component---node-modules-gatsby-plugin-offline-app-shell-js-7d4d1713e66a955f78bf.js>; rel=preload; as=script
 /about/
-  Link: </webpack-runtime-aa17700360f025285a34.js>; rel=preload; as=script
-  Link: </0-fb69afc5dd4078c0ecbb.js>; rel=preload; as=script
+  Link: </webpack-runtime-6a679237abbb479ce36a.js>; rel=preload; as=script
+  Link: </0-42ebdbd2ec1b20ba26f3.js>; rel=preload; as=script
 /changelog/
-  Link: </webpack-runtime-aa17700360f025285a34.js>; rel=preload; as=script
-  Link: </0-fb69afc5dd4078c0ecbb.js>; rel=preload; as=script
+  Link: </webpack-runtime-6a679237abbb479ce36a.js>; rel=preload; as=script
+  Link: </0-42ebdbd2ec1b20ba26f3.js>; rel=preload; as=script
 /clue/
-  Link: </webpack-runtime-aa17700360f025285a34.js>; rel=preload; as=script
-  Link: </0-fb69afc5dd4078c0ecbb.js>; rel=preload; as=script
+  Link: </webpack-runtime-6a679237abbb479ce36a.js>; rel=preload; as=script
+  Link: </0-42ebdbd2ec1b20ba26f3.js>; rel=preload; as=script
 /
-  Link: </webpack-runtime-aa17700360f025285a34.js>; rel=preload; as=script
-  Link: </0-fb69afc5dd4078c0ecbb.js>; rel=preload; as=script
+  Link: </webpack-runtime-6a679237abbb479ce36a.js>; rel=preload; as=script
+  Link: </0-42ebdbd2ec1b20ba26f3.js>; rel=preload; as=script

@@ -1,6 +1,5 @@
 export default {
-
-    apiEndpoint: 'https://gandymainwebsite.cdn.prismic.io/api/v2',
+    apiEndpoint: 'https://rsclues.cdn.prismic.io/api/v2',
 
     // -- Links resolution rules
     linkResolver(doc) {

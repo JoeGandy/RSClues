@@ -111,11 +111,13 @@ body {
         color: #222;
       }
 
+      ._changelog h3,
       & > h3 {
         font-size: 1.6em;
         padding: 20px 0 10px;
       }
 
+      ._changelog p,
       & > p {
         margin-bottom: 30px;
         padding: 5px;
@@ -129,6 +131,20 @@ body {
       a {
         color: #7B4F17;
         text-decoration: none;
+      }
+      ._about_section{
+        padding:10px;
+
+        h1 {
+          padding:10px;
+        }
+      }
+      ._planned_features{
+        padding: 50px 0;
+
+        h1{
+          padding:10px;
+        }
       }
 
       ._clue_search {
