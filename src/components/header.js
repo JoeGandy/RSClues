@@ -10,16 +10,16 @@ export default class Header extends Component {
                 <div className="_links">
                     <a href="/" title="Clue Solver"
                        className={window_is_alive && window.location.pathname === "/" ? "active" : ""}>
-                        <FaSearch attr={{alt: 'Clue Solver', title: 'Clue Solver'}}/>
+                        <FaSearch />
                         <span>Clue Solver</span>
                     </a>
                     <a href="/about" title="What is this"
                        className={window_is_alive && (window.location.pathname === "/about" || window.location.pathname === "/about/") ? "active" : ""}>
-                        <FaQuestion attr={{alt: 'What is this', title: 'What is this'}}/>
+                        <FaQuestion />
                         <span>What is this</span></a>
                     <a href="/changelog" title="Changelog"
                        className={window_is_alive && (window.location.pathname === "/changelog" || window.location.pathname === "/changelog/") ? "active" : ""}>
-                        <FaBook  attr={{alt: 'Changelog', title: 'Changelog'}}/>
+                        <FaBook />
                         <span>Changelog</span></a>
                 </div>
             </div>
