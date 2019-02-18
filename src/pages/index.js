@@ -26,8 +26,7 @@ export default class extends React.Component {
     }
 
     render() {
-        let data = this.state.data;
-        console.log(data);
+        let data = this.state.data; 
         let change_log_loaded = data !== null;
 
         return <Layout>
