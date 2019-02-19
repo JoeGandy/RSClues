@@ -1,8 +1,8 @@
 import React from "react";
 import Layout from "../components/layout";
 import ClueSearch from "../components/cluesearch";
+import * as PrismicHelper from "../data/prismic"
 import Prismic from "prismic-javascript";
-import PrismicConfig from "../prismic-configuration";
 
 
 export default class extends React.Component {
@@ -13,8 +13,8 @@ export default class extends React.Component {
             data: null
         };
 
-        this.buildContext().then((prismicCtx) => {
-            prismicCtx.api.query(
+        PrismicHelper.buildContext().then((context) => {
+            context.api.query(
                 Prismic.Predicates.at('document.type', 'changelog_change'),
                 {orderings: '[my.changelog_change.date desc]'}
             ).then(response => {
@@ -26,7 +26,7 @@ export default class extends React.Component {
     }
 
     render() {
-        let data = this.state.data; 
+        let data = this.state.data;
         let change_log_loaded = data !== null;
 
         return <Layout>
@@ -40,15 +40,5 @@ export default class extends React.Component {
                 </ul>
             </div>}
         </Layout>
-    }
-
-    buildContext() {
-        const accessToken = PrismicConfig.accessToken;
-        return Prismic.api(PrismicConfig.apiEndpoint, {accessToken}).then(api => ({
-            api,
-            endpoint: PrismicConfig.apiEndpoint,
-            accessToken,
-            linkResolver: PrismicConfig.linkResolver
-        }));
     }
 }

@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout";
 import Prismic from 'prismic-javascript';
-import PrismicConfig from "../prismic-configuration";
+import * as PrismicHelper from "../data/prismic";
 
 
 export default class extends React.Component {
@@ -12,8 +12,8 @@ export default class extends React.Component {
             data: null
         };
 
-        this.buildContext().then((prismicCtx) => {
-            prismicCtx.api.query(
+        PrismicHelper.buildContext().then((context) => {
+            context.api.query(
                 Prismic.Predicates.at('document.type', 'what_is_this_page'),
                 {orderings: '[my.what_is_this_page.date desc]'}
             ).then(response => {
@@ -49,15 +49,5 @@ export default class extends React.Component {
                 </div>
                 : <b>Content Loading...</b>}
         </Layout>
-    }
-
-    buildContext() {
-        const accessToken = PrismicConfig.accessToken;
-        return Prismic.api(PrismicConfig.apiEndpoint, {accessToken}).then(api => ({
-            api,
-            endpoint: PrismicConfig.apiEndpoint,
-            accessToken,
-            linkResolver: PrismicConfig.linkResolver
-        }));
     }
 }

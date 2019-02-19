@@ -10,7 +10,7 @@ export default class ClueSearch extends React.Component {
         if (clues.length < 1) return;
 
         let clue = clues[0];
-        console.log(clue);
+        
         window.location = '/clue?id=' + clue.id;
 
     }

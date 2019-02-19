@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout";
 import Prismic from "prismic-javascript";
-import PrismicConfig from "../prismic-configuration";
+import * as PrismicHelper from "../data/prismic";
 
 
 export default class extends React.Component {
@@ -12,8 +12,8 @@ export default class extends React.Component {
             data: null
         };
 
-        this.buildContext().then((prismicCtx) => {
-            prismicCtx.api.query(
+        PrismicHelper.buildContext().then((context) => {
+            context.api.query(
                 Prismic.Predicates.at('document.type', 'changelog_change'),
                 {orderings: '[my.changelog_change.date desc]'}
             ).then(response => {
@@ -45,15 +45,5 @@ export default class extends React.Component {
             }
             <br />
         </Layout>
-    }
-
-    buildContext() {
-        const accessToken = PrismicConfig.accessToken;
-        return Prismic.api(PrismicConfig.apiEndpoint, {accessToken}).then(api => ({
-            api,
-            endpoint: PrismicConfig.apiEndpoint,
-            accessToken,
-            linkResolver: PrismicConfig.linkResolver
-        }));
     }
 }
